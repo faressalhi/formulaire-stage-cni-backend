@@ -31,7 +31,7 @@ public abstract class Response {
 	@GenericGenerator(name="system-uuid", strategy="uuid")
 	//@JsonValue
 	private String idR;
-	@ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+	@ManyToOne(cascade=CascadeType.REMOVE, fetch = FetchType.LAZY)
 	private Question question;
 	
 }

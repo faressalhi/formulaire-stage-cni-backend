@@ -28,7 +28,7 @@ public class Choice {
 	private String contentC;
 	private int scoreC;
 	@JsonIgnore
-	@ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+	@ManyToOne(cascade=CascadeType.REMOVE, fetch = FetchType.LAZY)
 	private ChoicesResponse choicesResponse;
 	
 }
