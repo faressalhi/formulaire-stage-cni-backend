@@ -74,8 +74,7 @@ public class ResponseRestController {
 		return (SimpleResponseDTO) formulaireService.updateSimpleResponse(responseId, simpleResponseType, questionId); 		
 	
 	}
-	
-	
+		
 	@PutMapping("/choicesresponse/{responseId}")
 	public ChoicesResponseDTO updateChoicesResponse(@PathVariable String responseId, @RequestBody ChoicesResponseSavingFormatDTO crdto) throws QuestionNotFoundException, ResponseNotFoundException {
 		log.info("Updating a Choices Response with Id : "+responseId);

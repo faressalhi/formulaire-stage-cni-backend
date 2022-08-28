@@ -30,7 +30,7 @@ public class Question {
 	private String idQ;
 	private String contentQ;
 	private int ordreQ;
-	@OneToMany(mappedBy = "question", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "question", fetch = FetchType.LAZY)
 	private List<Response> questionResponses;
 	
 }
